@@ -14,6 +14,8 @@ class TestEx2(unittest.TestCase):
 
         expected = ["PDX", "DCA", "NONE"]
         result = reconstruct_trip(tickets, 3)
+        print("THIS IS RESULT", result)
+    
 
         self.assertTrue(expected == result)
 
