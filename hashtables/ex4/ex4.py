@@ -5,15 +5,18 @@ def has_negatives(a):
     nums_dict = {}
     nums_list = []
     # Your code here
+    # loop over every item in the arry
     for i in a:
+        # take the absolute value of ever item
         pos = abs(i)
+        # check to see if the number exists in the dictionary or not, if it doesn't add it
         if pos not in nums_dict:
             nums_dict[pos] = 1
+        # if it does exist then add check to see if it's already in the list and if not then add to the list 
         else:
-            nums_dict[pos] += 1
             if pos not in nums_list:
                 nums_list.append(pos)
-               
+    # return the list of pos numbers containing negative numbers            
     return nums_list
 
 
